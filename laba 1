@@ -40,11 +40,11 @@ int binarySearch(int arr[], int n, int key) {
 int main() {
     srand(time(0));
 
-    int sizes[] = { 100, 500, 1000 }; 
+    int sizes[] = { 100, 500, 1000 };
 
     for (int s = 0; s < 3; s++) {
         int n = sizes[s];
-        int* data = new int[n]; 
+        int* data = new int[n];
         for (int i = 0; i < n; i++) {
             data[i] = rand() % 100000;
         }
@@ -56,17 +56,17 @@ int main() {
         bubbleSort(arr1, n);
         auto end = high_resolution_clock::now();
         cout << "BubbleSort n=" << n << " time: "
-            << duration_cast<milliseconds>(end - start).count() << " ms\n";
+            << duration_cast<microseconds>(end - start).count() << " ms\n";
         delete[] arr1;
 
-        
+        // QuickSort 
         int* arr2 = new int[n];
         for (int i = 0; i < n; i++) arr2[i] = data[i];
         start = high_resolution_clock::now();
         sort(arr2, arr2 + n);
         end = high_resolution_clock::now();
         cout << "QuickSort n=" << n << " time: "
-            << duration_cast<milliseconds>(end - start).count() << " ms\n";
+            << duration_cast<microseconds>(end - start).count() << " ms\n";
 
         
         int key = rand() % 100000;
