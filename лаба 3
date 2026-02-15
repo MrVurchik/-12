@@ -1,0 +1,21 @@
+def multiply(a,b):
+    return a * b
+res = multiple(4,5)
+print(res)
+numbers = [14, 2, 88, 45, 7, 23]
+sorted_numbers = sorted(numbers, key=lambda x: x, reverse=True)
+print("Відсортований список (за зменшенням):", sorted_numbers)
+def greet(name, greeting="Hello"):
+    # Використовуємо коми в print, щоб спрацював sep
+    print(name, greeting, sep=",")
+greet("Vaca")
+greet("Vaca", "Hello my friends")
+num1 = int(input("Введіть перше число: "))
+num2 = int(input("Введіть друге число: "))
+num3 = lambda x: x % 2 == 0
+def check_result(n1, n2, message="Результат перевірки:"):
+   if num3(n1) == True and num3(n2) == True:
+        print(f"{message} Обидва числа парні")
+    else:
+        print(f"{message} Є непарне число")
+check_result(num1, num2)
