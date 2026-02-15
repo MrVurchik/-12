@@ -1,0 +1,43 @@
+# 1. Імпортуємо весь модуль math
+import math
+# 2. Обчислюємо квадратний корінь (sqrt) довільного числа
+number = 25
+root = math.sqrt(number)
+print(f"Квадратний корінь числа {number} дорівнює: {root}")
+# 3. Знаходимо синус кута
+degrees = 30
+radians = math.radians(degrees)
+sine_value = math.sin(radians)
+print(f"Синус кута {degrees}° дорівнює: {sine_value:}")
+# 4. Виводимо значення числа π (пі)
+print(f"Значення числа π: {math.pi}")
+
+from random import randint
+from math import factorial
+random_numbers = []
+for i in range(10):
+    num = randint(1, 100)
+    random_numbers.append(num)
+print("Згенеровані числа:", random_numbers)
+print("\nОбчислення факторіалів для чисел менше 10:")
+for n in random_numbers:
+    if n < 10:
+        f = factorial(n)
+        print(f"Факторіал числа {n} дорівнює {f}")
+    else:
+      print(f"Число {n} завелике для цієї умови")
+from math import sqrt as root,ceil
+import random as rnd
+print("Результати обчислень:")
+for i in range(5):
+    number = rnd.randint(1, 50)
+    res = root(number)
+    print(f"Корінь {number}: {ceil(res)}")
+
+from module1 import greet
+team = ["Олексій", "Марія", "Іван", "Наталія"]
+print("Результати роботи модуля 2:")
+for name in team:
+    result = greet(name)
+    print(result)
+    
