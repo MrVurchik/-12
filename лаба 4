@@ -34,6 +34,10 @@ for i in range(5):
     res = root(number)
     print(f"Корінь {number}: {ceil(res)}")
 
-  from module1 import greet
-    
+from module1 import greet
+team = ["Олексій", "Марія", "Іван", "Наталія"]
+print("Результати роботи модуля 2:")
+for name in team:
+    result = greet(name)
+    print(result)
     
