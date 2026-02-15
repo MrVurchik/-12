@@ -33,6 +33,7 @@ for i in range(5):
     number = rnd.randint(1, 50)
     res = root(number)
     print(f"Корінь {number}: {ceil(res)}")
-  
+
+  from module1 import greet
     
     
